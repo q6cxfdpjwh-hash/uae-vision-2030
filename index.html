@@ -4,297 +4,74 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>رؤية الإمارات 2030 - Pro Max</title>
+<title>رؤية الإمارات 2030</title>
 
+<link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-<style>
-
-/* ===== BASIC ===== */
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Cairo',sans-serif;
-}
-
-body{
-background:#050505;
-color:white;
-overflow:hidden;
-}
-
-/* ===== INTRO ===== */
-#intro{
-position:fixed;
-width:100%;
-height:100%;
-background:radial-gradient(circle,#111,#000);
-display:flex;
-justify-content:center;
-align-items:center;
-z-index:99999;
-text-align:center;
-}
-
-#intro h1{
-color:gold;
-font-size:50px;
-}
-
-#intro p{
-color:#aaa;
-margin:15px 0;
-}
-
-#intro button{
-padding:15px 35px;
-background:gold;
-border:none;
-cursor:pointer;
-font-weight:bold;
-border-radius:30px;
-}
-
-/* ===== PARTICLES ===== */
-#particles{
-position:fixed;
-width:100%;
-height:100%;
-z-index:-1;
-}
-
-/* ===== NAV ===== */
-nav{
-position:fixed;
-top:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-padding:15px 30px;
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
-z-index:999;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 10px;
-}
-
-.logo{
-color:gold;
-font-weight:bold;
-}
-
-/* ===== HERO ===== */
-.hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:linear-gradient(rgba(0,0,0,0.6),black),
-url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c') center/cover;
-transition:1s;
-}
-
-.hero h1{
-font-size:65px;
-color:gold;
-}
-
-/* ===== SECTIONS ===== */
-section{
-padding:100px 20px;
-text-align:center;
-}
-
-h2{
-color:gold;
-margin-bottom:20px;
-font-size:35px;
-}
-
-/* ===== GRID ===== */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.card{
-background:#111;
-padding:30px;
-border:1px solid gold;
-border-radius:15px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-/* ===== STATS ===== */
-.stats{
-display:flex;
-justify-content:center;
-gap:50px;
-}
-
-.stat h3{
-font-size:50px;
-color:gold;
-}
-
-/* ===== TIMELINE ===== */
-.timeline div{
-margin:15px auto;
-padding:15px;
-width:60%;
-background:#111;
-border-left:4px solid gold;
-}
-
-/* ===== FOOTER ===== */
-footer{
-padding:40px;
-text-align:center;
-background:black;
-border-top:1px solid gold;
-}
-
-/* ===== BUTTON ===== */
-button{
-background:gold;
-border:none;
-padding:12px 30px;
-cursor:pointer;
-font-weight:bold;
-margin-top:20px;
-border-radius:30px;
-}
-
-</style>
 </head>
 
 <body>
 
-<!-- INTRO -->
-<div id="intro">
-  <div>
-    <h1>🇦🇪 رؤية الإمارات 2030</h1>
-    <p>جارٍ تحميل مستقبل الدولة...</p>
-    <button onclick="start()">دخول الموقع</button>
-  </div>
-</div>
-
-<!-- MUSIC -->
-<audio id="music" loop>
-<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8b6c2f6f0.mp3">
-</audio>
-
-<!-- PARTICLES -->
-<div id="particles"></div>
-
-<!-- NAV -->
-<nav>
-<div class="logo">🇦🇪 2030</div>
-<div>
-<a href="#about">عن</a>
-<a href="#tech">تقنية</a>
-<a href="#stats">إحصائيات</a>
-<a href="#future">مستقبل</a>
-</div>
-</nav>
-
 <!-- HERO -->
-<section class="hero">
-<h1>رؤية الإمارات 2030</h1>
-</section>
+<header class="hero">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>🇦🇪 رؤية الإمارات 2030</h1>
+    <p>مستقبل يصنعه الذكاء والابتكار والطموح</p>
+    <button onclick="scrollToSection('about')">ابدأ الاستكشاف</button>
+  </div>
+</header>
 
 <!-- ABOUT -->
 <section id="about">
-<h2>عن الرؤية</h2>
-<p>خطة وطنية لبناء مستقبل ذكي ومستدام يعتمد على الابتكار.</p>
+  <h2>عن الرؤية</h2>
+  <p>
+    رؤية وطنية تهدف إلى تطوير الاقتصاد، التعليم، التكنولوجيا والاستدامة لبناء مستقبل عالمي.
+  </p>
 </section>
 
 <!-- TECH -->
 <section id="tech">
-<h2>التكنولوجيا</h2>
-<div class="grid">
-<div class="card">AI</div>
-<div class="card">Smart Cities</div>
-<div class="card">Cyber Security</div>
-<div class="card">Space</div>
-</div>
+  <h2>التكنولوجيا</h2>
+
+  <div class="grid">
+    <div class="card">🤖 الذكاء الاصطناعي</div>
+    <div class="card">🏙️ المدن الذكية</div>
+    <div class="card">🔐 الأمن السيبراني</div>
+    <div class="card">🚀 الفضاء</div>
+  </div>
 </section>
 
 <!-- STATS -->
 <section id="stats">
-<h2>الإحصائيات</h2>
-<div class="stats">
-<div><h3 class="counter" data="2030">0</h3></div>
-<div><h3 class="counter" data="100">0</h3></div>
-<div><h3 class="counter" data="500">0</h3></div>
-</div>
+  <h2>الإحصائيات</h2>
+
+  <div class="stats">
+    <div><h3 class="counter" data-target="2030">0</h3><p>الرؤية</p></div>
+    <div><h3 class="counter" data-target="100">0</h3><p>% تحول رقمي</p></div>
+    <div><h3 class="counter" data-target="500">0</h3><p>مشروع</p></div>
+  </div>
 </section>
 
 <!-- FUTURE -->
 <section id="future">
-<h2>المستقبل</h2>
-<div class="timeline">
-<div>2025 - AI</div>
-<div>2027 - Smart Cities</div>
-<div>2030 - Global Leadership</div>
-</div>
+  <h2>المستقبل</h2>
+
+  <div class="timeline">
+    <div>2025 - الذكاء الاصطناعي</div>
+    <div>2027 - مدن ذكية</div>
+    <div>2030 - ريادة عالمية</div>
+  </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-<p>إعداد: إياد السعداوي</p>
-<p>مدرسة دبي لتربية الحديثة</p>
-<p>تحت إشراف: عمرو علي</p>
+  <p>إعداد الطالب: إياد السعداوي</p>
+  <p>مدرسة دبي لتربية الحديثة</p>
+  <p>تحت إشراف المعلم: عمرو علي</p>
 </footer>
 
-<script>
-// START
-function start(){
-document.getElementById("intro").style.display="none";
-document.body.style.overflow="auto";
-document.getElementById("music").volume=0.3;
-document.getElementById("music").play();
-}
-
-// COUNTER
-let counters=document.querySelectorAll(".counter");
-
-window.addEventListener("scroll",()=>{
-counters.forEach(c=>{
-let target=+c.getAttribute("data");
-let current=+c.innerText;
-if(current<target){
-c.innerText=current+10;
-}
-});
-});
-
-// PARTICLES SIMPLE
-let p=document.getElementById("particles");
-for(let i=0;i<50;i++){
-let d=document.createElement("div");
-d.style.position="absolute";
-d.style.width="3px";
-d.style.height="3px";
-d.style.background="gold";
-d.style.top=Math.random()*100+"%";
-d.style.left=Math.random()*100+"%";
-d.style.opacity="0.5";
-p.appendChild(d);
-}
-
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
