@@ -4,74 +4,154 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>رؤية الإمارات 2030</title>
+<title>رؤية الإمارات 2030 - النسخة الفاخرة</title>
 
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="overlay"></div>
-
-  <div class="hero-content">
-    <h1>🇦🇪 رؤية الإمارات 2030</h1>
-    <p>مستقبل يصنعه الذكاء والابتكار والطموح</p>
-    <button onclick="scrollToSection('about')">ابدأ الاستكشاف</button>
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-box">
+    <div class="spinner"></div>
+    <h2>جارٍ تحميل مستقبل الإمارات...</h2>
   </div>
-</header>
+</div>
+
+<!-- PARTICLES -->
+<div id="particles-js"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">🇦🇪 رؤية الإمارات 2030</div>
+  <ul>
+    <li><a href="#hero">الرئيسية</a></li>
+    <li><a href="#about">عن الرؤية</a></li>
+    <li><a href="#tech">التكنولوجيا</a></li>
+    <li><a href="#stats">الإحصائيات</a></li>
+    <li><a href="#future">المستقبل</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+
+<div class="hero-content" data-aos="fade-up">
+
+<h1>رؤية الإمارات 2030</h1>
+
+<p>مستقبل يصنعه الذكاء، الابتكار، والطموح الذي لا حدود له</p>
+
+<button onclick="scrollToSection('about')">استكشف الرؤية</button>
+
+</div>
+
+</section>
 
 <!-- ABOUT -->
-<section id="about">
-  <h2>عن الرؤية</h2>
-  <p>
-    رؤية وطنية تهدف إلى تطوير الاقتصاد، التعليم، التكنولوجيا والاستدامة لبناء مستقبل عالمي.
-  </p>
+<section id="about" data-aos="fade-up">
+
+<h2>عن الرؤية</h2>
+<p>
+رؤية وطنية تهدف إلى بناء اقتصاد قوي، مجتمع متقدم، وبيئة مستدامة تعتمد على الذكاء الاصطناعي والتكنولوجيا.
+</p>
+
 </section>
 
 <!-- TECH -->
 <section id="tech">
-  <h2>التكنولوجيا</h2>
 
-  <div class="grid">
-    <div class="card">🤖 الذكاء الاصطناعي</div>
-    <div class="card">🏙️ المدن الذكية</div>
-    <div class="card">🔐 الأمن السيبراني</div>
-    <div class="card">🚀 الفضاء</div>
-  </div>
+<h2 data-aos="fade-up">التكنولوجيا</h2>
+
+<div class="grid">
+
+<div class="card" data-aos="zoom-in">🤖 الذكاء الاصطناعي</div>
+<div class="card" data-aos="zoom-in">🏙️ المدن الذكية</div>
+<div class="card" data-aos="zoom-in">🔐 الأمن السيبراني</div>
+<div class="card" data-aos="zoom-in">🚀 الفضاء</div>
+
+</div>
+
 </section>
 
 <!-- STATS -->
 <section id="stats">
-  <h2>الإحصائيات</h2>
 
-  <div class="stats">
-    <div><h3 class="counter" data-target="2030">0</h3><p>الرؤية</p></div>
-    <div><h3 class="counter" data-target="100">0</h3><p>% تحول رقمي</p></div>
-    <div><h3 class="counter" data-target="500">0</h3><p>مشروع</p></div>
-  </div>
+<h2 data-aos="fade-up">الإحصائيات</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3 class="counter" data-target="2030">0</h3>
+<p>رؤية المستقبل</p>
+</div>
+
+<div class="stat">
+<h3 class="counter" data-target="100">0</h3>
+<p>% التحول الرقمي</p>
+</div>
+
+<div class="stat">
+<h3 class="counter" data-target="500">0</h3>
+<p>مشروع وطني</p>
+</div>
+
+</div>
+
 </section>
 
 <!-- FUTURE -->
 <section id="future">
-  <h2>المستقبل</h2>
 
-  <div class="timeline">
-    <div>2025 - الذكاء الاصطناعي</div>
-    <div>2027 - مدن ذكية</div>
-    <div>2030 - ريادة عالمية</div>
-  </div>
+<h2 data-aos="fade-up">المستقبل</h2>
+
+<div class="timeline">
+
+<div data-aos="fade-right">2025 - الذكاء الاصطناعي في كل القطاعات</div>
+<div data-aos="fade-right">2027 - مدن ذكية بالكامل</div>
+<div data-aos="fade-right">2029 - اقتصاد عالمي رائد</div>
+<div data-aos="fade-right">2030 - الريادة العالمية</div>
+
+</div>
+
+</section>
+
+<!-- UAE FACTS -->
+<section>
+
+<h2 data-aos="fade-up">حقائق عن الإمارات</h2>
+
+<div class="grid">
+
+<div class="card" data-aos="flip-left">أول دولة تصل للمريخ</div>
+<div class="card" data-aos="flip-left">أعلى برج في العالم</div>
+<div class="card" data-aos="flip-left">أذكى مدن في الشرق الأوسط</div>
+<div class="card" data-aos="flip-left">اقتصاد عالمي متقدم</div>
+
+</div>
+
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>إعداد الطالب: إياد السعداوي</p>
-  <p>مدرسة دبي لتربية الحديثة</p>
-  <p>تحت إشراف المعلم: عمرو علي</p>
+
+<h3>إعداد الطالب: إياد السعداوي</h3>
+<p>مدرسة دبي لتربية الحديثة</p>
+<p>تحت إشراف المعلم: عمرو علي</p>
+
 </footer>
 
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script src="script.js"></script>
+
 </body>
 </html>
